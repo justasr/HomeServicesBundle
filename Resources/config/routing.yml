@@ -1,0 +1,3 @@
+justasr_home_services_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: justasrHomeServicesBundle:Default:index }
