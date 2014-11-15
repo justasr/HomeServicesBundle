@@ -1,0 +1,30 @@
+{
+    "name" : "justasr/HomeServicesBundle",
+    "description" : "HomeServicesBundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Justinas Ruika",
+        "email" : "justas.ruika@gmail.com"
+    }],
+    "keywords" : [
+        "HomeServicesBundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "justasr\\HomeServicesBundle" : ""
+        }
+    },
+    "target-dir" : "justasr/HomeServicesBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "some_version-dev"
+        }
+    }
+}
