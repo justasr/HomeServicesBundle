@@ -1,3 +1,11 @@
 justasr_home_services_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: justasrHomeServicesBundle:Default:index }
+
+justasr_home_services_createUser:
+    path:     /createUser
+    defaults: { _controller: justasrHomeServicesBundle:Default:createUser }
+jr_default_security_target:
+    path:     /default
+    defaults: { _controller: justasrHomeServicesBundle:Security:default }
+

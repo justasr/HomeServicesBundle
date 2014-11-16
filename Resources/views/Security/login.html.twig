@@ -1,0 +1,23 @@
+{# src/Acme/SecurityBundle/Resources/views/Security/login.html.twig #}
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/justasrhomeservices/css/signin.css') }}" rel="stylesheet" media="screen">
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <form action="{{ path('login_check') }}"  method="post" class="form-signin" role="form">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="username" class="sr-only">Username:</label>
+            <input name="_username" type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="">
+            <label for="password" class="sr-only">Password</label>
+            <input name="_password" type="password" id="password" class="form-control" placeholder="Password" required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div>
+{% endblock %}

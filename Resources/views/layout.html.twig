@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="masthead">
+            <h3 class="text-muted">Home Services</h3>
+            <div role="navigation">
+                <ul class="nav nav-justified">
+                    {% block navigation%}
+                        <li ><a href="#">Home</a></li>
+                    {% endblock %}
+                </ul>
+            </div>
+        </div>
+
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- Site footer -->
+        <footer class="footer">
+            {% block footer %}<p>© Company 2014</p>{% endblock %}
+        </footer>
+
+    </div>
+{% endblock %}
